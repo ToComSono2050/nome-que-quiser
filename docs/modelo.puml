@@ -1,16 +1,4 @@
-@startuml
-' Modelo de domínio do sistema: Entrega 1.
-'
-' Este arquivo é o ponto de partida. Substitua pelo modelo da sua equipe.
-' O diagrama precisa corresponder ao código entregue.
-'
-' Para gerar a imagem: instale o plugin PlantUML no IntelliJ, ou use
-'   plantuml docs/modelo.puml
-' e versione a imagem gerada ao lado deste arquivo.
-
-skinparam classAttributeIconSize 0
-hide empty members
-
+classDiagram
 class Item {
   - codigo : String
   - titulo : String
@@ -34,11 +22,3 @@ class Emprestimo {
 
 Usuario "1" *-- "0..3" Emprestimo : quantidade
 
-note bottom of Item
-  Ponto de partida, não modelo pronto.
-  Decidam: quais entidades existem,
-  quem guarda o quê, quais invariantes
-  cada objeto protege.
-end note
-
-@enduml
